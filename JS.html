@@ -1,0 +1,27 @@
+<!-- Write JS to imput p,t,r and display SI -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simple Interest </title>
+    </head>
+    <body>
+        <form>
+            <h1>Simple Interest</h1>
+            Princial <input type="text" id="txtv1"> 
+            Time <input type="text" id="txtv2"> 
+            Rate <input type="text" id="txtv3">
+            <input type="button" value="Calculate" id="btnml" onclick="calculate()">
+            Result<input type="number" id="txtResult">
+        </form>
+    </body>
+    <script>
+        function Calc() {
+            var p=document.getElementById("txtv1").value;
+            var t=document.getElementById("txtv2").value;
+            var r=document.getElementById("txtv3").value;
+            var c=(Number(p)*Number(t)*Number(r))/100;
+            document.getElementById("txtResult").value=c;
+        }
+    </script>
+</html>

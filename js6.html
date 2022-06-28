@@ -1,0 +1,34 @@
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cookie</title>
+</head>
+
+<body>
+    <form>
+        Your name <input type="text" id="txtname"> <br>
+        <input type="button" value="Write cookie" onclick="setcookie()"><br>
+        <input type="button" value="Read cookie" onclick="readcookie()"><br>
+    </form>
+</body>
+<script>
+    function setcookie()
+    {
+        var name=document.getElementById("txtname").value;
+        if (name!="")
+        {
+            document.cookie="name="+name+";";
+            alert("cookie is set");
+        }
+    }
+    function readcookie()
+    {
+        var name="";
+        name=document.cookie;
+        alert(name);
+    }
+</script>
+</html>

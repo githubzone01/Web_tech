@@ -1,0 +1,24 @@
+<!-- Conditions 
+    Write a Js program to input a no and dispaly hello only if it is divisible by 5.-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>If statement </title>
+    </head>
+    <body>
+        <form>
+            value <input type="text" id="txtvalue"> <br>
+            <input type="button" value="OK" onclick="check()">
+        </form>
+    </body>
+    <script>
+        function check() {
+            var n=Number(document.getElementById("txtvalue").value);
+            if(n%5==0)
+            {
+                alert("Helo!");
+            }
+        }
+    </script>
+</html>

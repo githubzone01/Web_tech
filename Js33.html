@@ -1,0 +1,27 @@
+<!-- Write JS program to dislpay sum of first 100 natural no.using for loop. -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sum of first 100 Natural No.</title>
+    </head>
+    <body>
+        <form>
+            Enter Number <input type="text" id="txtnum"> <br>
+            <input type="button" value="Sum" onclick="sum()"><br>
+            Result<input type="text" id="txtresult">
+        </form>
+    </body>
+    <script>
+        function sum() {
+         var n=Number(document.getElementById("txtnum").value);
+         var s=0;
+         var i;
+         for (i=1;i<=n;i++)
+         {
+             s=s+i;
+         }
+         document.getElementById("txtresult").value=s;
+        }
+    </script>
+</html>

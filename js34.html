@@ -1,0 +1,26 @@
+<!-- Wap to display message Hello until user input 1 -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Display</title>
+    </head>
+    <body>
+        <form>
+            Enter Number <input type="text" id="txtvalue"> <br>
+            <input type="button" value="Check" onclick="show()"><br>
+        </form>
+    </body>
+    <script>
+        function show() {
+         var f=0;
+         while(f!=1)
+         
+         {
+             alert(f);
+             f=Number(prompt("Enter a value"));
+             alert("Hello!");
+         }
+        }
+    </script>
+</html>

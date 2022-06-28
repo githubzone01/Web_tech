@@ -1,0 +1,28 @@
+<!-- Write a program to input a number and display it is even or odd -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Even or odd</title>
+    </head>
+    <body>
+        <form>
+            Enter Number <input type="text" id="txtvalue"> <br><br>
+            <input type="button" value="Check Even or Odd" onclick="check()"><br>
+            Result<input type="text" id="txtResult">
+        </form>
+    </body>
+    <script>
+        function check() {
+            var n=Number(document.getElementById("txtvalue").value);
+            if(n%2==0)
+            {
+                document.getElementById("txtResult").value="even";
+            }
+            else{
+                document.getElementById("txtResult").value="odd";
+            }
+        }
+    </script>
+</html>
+

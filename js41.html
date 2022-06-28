@@ -1,0 +1,28 @@
+<!-- Write a program to input 3 no. in array and dispaly sum of array -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sum of Array</title>
+    </head>
+    <body>
+        <form>
+            Enter Number1 <input type="text" id="txtnum1"> <br>
+            Enter Number2 <input type="text" id="txtnum2"> <br>
+            Enter Number3 <input type="text" id="txtnum3"> <br>
+            <input type="button" value="Sum of Array" onclick="sum()"><br>
+            Result <input type="number" id="txtresult">
+        </form>
+    </body>
+    <script>
+        function sum()
+        {
+                var a=[];
+                a[0]=Number(document.getElementById("txtnum1").value);
+                a[1]=Number(document.getElementById("txtnum2").value);
+                a[2]=Number(document.getElementById("txtnum3").value);
+                var ans=a[0]+a[1]+a[2];
+                document.getElementById("txtresult").value=ans;
+        }
+    </script>
+</html>

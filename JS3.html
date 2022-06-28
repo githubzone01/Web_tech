@@ -1,0 +1,45 @@
+<!-- Write Js program to input sale amount and display based on following
+conditions
+sale amount         discount
+<1000             No discount
+>=1000 and <10000   5%
+>=10000 and < 20000  10%
+>=20000             15% -->
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Billing System</title>
+    </head>
+    <body>
+        <form>
+            Sale Amount <input type="text" id="txtsale"> <br>
+            <input type="button" value="Check discount" onclick="show()"><br>
+            Discount <input type="number" id="txtdisc">
+        </form>
+    </body>
+    <script>
+        function show() {
+           var sale=Number(document.getElementById("txtsale").value);
+           var d=0;
+           if (sale<1000)
+           {
+               d=0;
+           }
+           else if(sale>=1000 && sale<10000)
+           {
+               d=sale*5/100;
+           }
+           else if(sale>=10000 && sale<20000)
+           {
+               d=sale*10/100;
+           }
+           else if (sale>=20000)
+           {
+               d=sale*15/100;
+           }
+           document.getElementById("txtdisc").value=d;
+            }
+    </script>
+</html>

@@ -1,0 +1,25 @@
+<!-- Wap to input two number and display their sum.  1.HTML form  2.Give id 3.Add event to a button and assign a function 4.Write JS function.Define -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sum of two number </title>
+    </head>
+    <body>
+        <form>
+            <h1>Sum of two no.</h1>
+            val 1 <input type="text" id="txtv1"> 
+            val 2 <input type="text" id="txtv2"> 
+            <input type="button" value="sum" id="btnsum" onclick="Sum()">
+            Result<input type="number" id="txtResult">
+        </form>
+    </body>
+    <script>
+        function Sum() {
+            var a=document.getElementById("txtv1").value;
+            var b=document.getElementById("txtv2").value;
+            var c=Number(a)+Number(b);
+            document.getElementById("txtResult").value=c;
+        }
+    </script>
+</html>

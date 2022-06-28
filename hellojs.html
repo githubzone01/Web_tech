@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello</title>
+  </head>
+  <body>
+    <input type="number" name="number" id="input" />
+    <div id="result"></div>
+    <script>
+      const resultDiv = document.getElementById("result");
+      const numberInput = document.getElementById("input");
+      const number = document.getElementById("input").value;
+      resultDiv.textContent = "Hello ";
+
+      const interval = setInterval(()=>{
+        resultDiv.textContent += "Hello ";
+      },100)
+      numberInput.addEventListener("input", (e) => {
+        if (e.target.value.includes("1")) {
+          resultDiv.textContent = "Done";
+          clearTimeout(interval)
+        }
+      });
+    </script>
+  </body>
+</html>

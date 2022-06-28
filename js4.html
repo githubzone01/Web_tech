@@ -1,0 +1,29 @@
+<!-- Write js program to input a no. and display sumof digits -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sum of Digits</title>
+    </head>
+    <body>
+        <form>
+            Enter Number <input type="text" id="txtnum"> <br>
+            <input type="button" value="Sum of digits" onclick="sum()"><br>
+            Result <input type="number" id="txtresult">
+        </form>
+    </body>
+    <script>
+        function sum() {
+         var n=Number(document.getElementById("txtnum").value);
+         var sum=0;
+         var remainder=0;
+            while (n>0)
+            {
+                remainder = n % 10;
+                sum = sum + remainder;
+                n = Math.floor(n/10);
+                }
+                document.getElementById("txtresult").value=sum;
+        }
+    </script>
+</html>

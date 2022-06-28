@@ -1,0 +1,33 @@
+<!-- Write js program to add two no. and display their sum using javascript approach  -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sum of Array</title>
+</head>
+
+<body>
+    <form>
+        Enter Number1 <input type="text" id="txtv1"> <br>
+        Enter Number2 <input type="text" id="txtv2"> <br>
+        <input type="button" value="Sum of Array" onclick="sum()"><br>
+    </form>
+</body>
+<script>
+    const calc = {
+        value1: 0, 
+        value2: 0, 
+        sum: function () {
+            return (this.value1 + this.value2);
+        }
+    };
+    function sum() {
+        calc.value1 =Number(document.getElementById("txtv1").value);
+        calc.value2 =Number(document.getElementById("txtv2").value);
+        var s=calc.sum();
+        alert(s);
+    }
+</script>
+
+</html>

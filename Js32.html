@@ -1,0 +1,27 @@
+<!-- Wap to input a no. and display its factorial -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Factorial</title>
+    </head>
+    <body>
+        <form>
+            Enter Number for Factorial <input type="text" id="txtnum"> <br>
+            <input type="button" value="Get" onclick="fac()"><br>
+            Result<input type="text" id="txtresult">
+        </form>
+    </body>
+    <script>
+        function fac() {
+            var n=Number(document.getElementById("txtnum").value);
+            var f=1;
+            var i;
+            for (i=1;i<=n;i++)
+            {
+                f=f*i;
+            }
+            document.getElementById("txtresult").value=f;
+        }
+    </script>
+</html>
